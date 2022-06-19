@@ -3,16 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    background-color: rgba(33, 5, 43, 0.055);
 }
+
 
 .gallery {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
 }
 
 .img {
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +41,7 @@ p {
     font-family: 'Amatic SC', cursive;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
     font-size: 2em;
+    background: none;
 }
 
 p:nth-child(2) {
@@ -73,4 +76,13 @@ p:nth-child(2) {
     transform: translateY(0);
 }
 
-
+.img.open {
+    flex: 5;
+    font-size: 40px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .img p {
+      font-size: 1em;
+    }
+  }
